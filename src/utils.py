@@ -1,16 +1,19 @@
+# Utility functions for basic math operations with error handling
+
 def add(a, b):
+    # Error Handling: Check if inputs are numbers
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
+        return "Error: Invalid input! Please provide numbers."
     return a + b
 
 def subtract(a, b):
+    # Error Handling: Check if inputs are numbers
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
+        return "Error: Invalid input! Please provide numbers."
     return a - b
 
-# Test code for calculator functions
-print(add(10, 5))
-print(subtract(10, 5))
-
- # one more function (multiply) 
 def multiply(a, b):
+    # Error Handling: Check if inputs are numbers
+    if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
+        return "Error: Invalid input! Please provide numbers."
     return a * b
-
-# test code
-print(f"Multiplication of 10 and 5 is: {multiply(10, 5)}")
